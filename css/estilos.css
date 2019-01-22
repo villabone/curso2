@@ -1,0 +1,45 @@
+body {
+	font-family: Dancing Scrip;
+  background: #02010a;
+	width: 90%;
+  margin-left: 5%;
+}
+header {
+  padding: 2vh 2vw;
+	margin-bottom: 1vh;
+	border-radius: 1vh;
+  background: #5b7989;
+  color: white;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 0;
+}
+h1::selection {
+  text-shadow: 2px #02010a;
+}
+h1 {
+  display: inline;
+}
+nav {
+  display: inline;
+  float: right;
+  padding: 1vh 1vw;
+  font-size: 1.5em;
+}
+a {
+  color: white;
+}
+.noSubrayado {
+text-decoration: none;
+}
+section {
+	width: 90%;
+	margin: 0 auto;
+  padding: 10px;
+  background: #82c3a6;
+  text-align: center;
+  box-sizing: border-box;
+}
+img {
+  width: 70%;
+}
