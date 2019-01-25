@@ -1,18 +1,36 @@
+@font-face {
+	font-family: 'DancingScript';
+	src: url('DancingScript-regular.otf');
+}
 body {
-	font-family: Dancing Scrip;
+	font-family: 'DancingScript';
   background: #02010a;
 	width: 90%;
   margin-left: 5%;
 }
 header {
-  padding: 2vh 2vw;
-	margin-bottom: 1vh;
-	border-radius: 1vh;
+	border-radius: 10px 10px 0px 0px;
   background: #5b7989;
   color: white;
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 0;
+	display: flex;
+	animation: animacion 1s;
+}
+header nav{
+	margin: auto;
+}
+@-webkit-keyframes animacion{
+	0%{
+		margin-top: 150%;
+	}
+	60%{
+		margin-top: -5%;
+	}
+	100%{
+		margin-top: 0%;
+	}
 }
 h1::selection {
   text-shadow: 2px #02010a;
@@ -42,4 +60,72 @@ section {
 }
 img {
   width: 70%;
+	-webkit-filter: drop-shadow(2px 2px 2px #02010a);
+	filter: drop-shadow(2px 2px 2px #02010a);
+}
+#colunnas {
+	width: 90%;
+	margin: 0 auto;
+  padding: 10px;
+  background: #d5c75f;
+  box-sizing: border-box;
+}
+.contenido {
+	display: flex;
+	flex-direction: row;
+}
+img.tamaño {
+	width: 80%;
+	border: solid 2px;
+	transition: 2s;
+}
+img.tamaño:hover {
+	transform: rotate(10deg);
+}
+img.tamaño {
+	-webkit-filter: drop-shadow(5px 10px 15px #82c3a6);
+	filter: drop-shadow(5px 10px 15px #82c3a6);
+}
+img.tamaño2 {
+	width: 80%;
+	border: solid 2px;
+	-webkit-filter: drop-shadow(2px 2px 2px #82c3a6);
+	filter: drop-shadow(2px 2px 2px #82c3a6);
+	transition: 2s;
+}
+img.tamaño2:hover {
+	transform: translate(20px, -5px);
+}
+footer {
+background: #C6d5c5;
+width: 90%;
+margin: 0 auto;
+padding: 10px;
+border-radius: 0px 0px 10px 10px;
+box-sizing: border-box;
+}
+div.contenedor {
+	display: flex;
+	flex-direction: row;
+}
+a.negro {
+	color: black;
+	text-decoration: none;
+}
+div.ancho {
+	width: 25%;
+}
+@media (max-width:720px) {
+	header {
+		text-align: center;
+	}
+	header {
+		flex-direction: column;
+	}
+	.contenido {
+		flex-direction: column;
+	}
+	div.contenedor {
+		flex-direction: column;
+	}
 }
